@@ -4,14 +4,14 @@ import Habit from "./habit";
 class Habits extends Component {
   render() {
     return (
-      <ul>
+      <ul className="habits">
         {this.props.habits.map((habit) => (
           <Habit
             key={habit.id}
             habit={habit}
-            onIncrement={this.props.handleIncrement}
-            onDecrement={this.props.handleDecrement}
-            onDelete={this.props.handleDelete}
+            onIncrement={this.props.onIncrement}
+            onDecrement={this.props.onDecrement}
+            onDelete={this.props.onDelete}
           />
         ))}
       </ul>
