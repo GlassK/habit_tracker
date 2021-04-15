@@ -1,5 +1,7 @@
 import React, { useCallback, useState } from "react";
 import "./app.css";
+import Button1 from "./components/button1";
+import Button2 from "./components/button2";
 import Habits from "./components/habits";
 import Navbar from "./components/navbar";
 
@@ -64,6 +66,12 @@ const App = () => {
         onReset={handleReset}
       />
     </>
+    /*
+    <>
+      <Button1 />
+      <Button2 />
+    </>
+    */
   );
 };
 
